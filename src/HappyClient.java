@@ -86,7 +86,7 @@ public class HappyClient {
                 e.printStackTrace();
             }
         });
-        consumer.writeToSonsole();
+        consumer.writeToConsole();
     }
 
 }
@@ -99,7 +99,7 @@ class HappyConsumer {
         massages.add(massage);
     }
 
-    public void writeToSonsole() {
+    public void writeToConsole() {
         massages.stream().forEach(System.out::print);
     }
 }
